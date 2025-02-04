@@ -1,0 +1,28 @@
+﻿@* This is a partial view that will be used to display the department table in the index view *@
+@*Use IEnumerable for Encapsulation as it is not neccesary to know what type of Array is used*@
+@model IEnumerable<TrialMVCWebApp.Areas.Department.Models.Department>
+
+<table class="table table-bordered">
+    <caption style="font-size: large;">Departments</caption>
+    <thead>
+        <tr>
+            <th>Department ID</th>
+            <th>Department Name</th>
+            <th>Department Manager</th>
+            <th>Department Location</th>
+            <th>Department Employee Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var department in Model)
+        {
+            <tr>
+                <td>@department.id</td>
+                <td>@department.name</td>
+                <td>@department.manager</td>
+                <td>@department.location</td>
+                <td>@department.employeeCount</td>
+            </tr>
+        }
+    </tbody>
+</table>

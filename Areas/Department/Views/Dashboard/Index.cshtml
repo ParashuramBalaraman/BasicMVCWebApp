@@ -1,0 +1,10 @@
+﻿@model TrialMVCWebApp.Areas.Department.Models.DashboardViewModel
+
+@{
+    ViewBag.Title = "Department Dashboard";
+
+}
+
+<h2>Departments Listed</h2>
+@*PartialView for the DepartmentTable implemented into the View*@
+@Html.Partial("DepartmentTable", Model.Departments)

@@ -1,0 +1,15 @@
+﻿.table-bordered {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+caption{
+    font-size:larger;
+    font-style: oblique;
+}
